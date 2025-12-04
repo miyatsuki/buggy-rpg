@@ -1,0 +1,80 @@
+.inventory-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.inventory-section h3 {
+  margin: 0 0 12px 0;
+  color: #f39c12;
+  font-size: 16px;
+}
+
+.empty-message {
+  color: #7f8c8d;
+  font-style: italic;
+}
+
+.item-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.item-row {
+  background-color: #34495e;
+  border-radius: 4px;
+  padding: 12px;
+  margin-bottom: 8px;
+}
+
+.item-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+
+.item-name {
+  font-weight: bold;
+  color: #ecf0f1;
+}
+
+.item-quantity {
+  color: #95a5a6;
+}
+
+.item-description {
+  font-size: 12px;
+  color: #bdc3c7;
+  margin-bottom: 8px;
+}
+
+.item-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.equipment-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.equipment-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px;
+  background-color: #34495e;
+  border-radius: 4px;
+}
+
+.equipment-slot-name {
+  color: #95a5a6;
+  min-width: 100px;
+}
+
+.equipment-item-name {
+  flex: 1;
+  color: #ecf0f1;
+}

@@ -1,0 +1,67 @@
+.btn {
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  /* BUG_ID: U5 - クリック領域がボタンの見た目より小さい */
+  padding: 2px 4px;
+  margin: 8px;
+  min-width: 80px;
+}
+
+/* BUG_ID: U10 - フォーカス時のアウトラインがない */
+.btn:focus {
+  outline: none;
+}
+
+.btn-small {
+  font-size: 12px;
+  min-height: 24px;
+}
+
+.btn-medium {
+  font-size: 14px;
+  min-height: 32px;
+}
+
+.btn-large {
+  font-size: 16px;
+  min-height: 40px;
+}
+
+/* BUG_ID: U2 - 暗い背景に暗い色で見づらい */
+.btn-primary {
+  background-color: #2c3e50;
+  color: #34495e;
+}
+
+/* BUG_ID: U7 - ホバー時の色変化がない */
+.btn-primary:hover {
+  background-color: #2c3e50;
+}
+
+.btn-primary:disabled {
+  background-color: #1a252f;
+  color: #2c3e50;
+  cursor: not-allowed;
+}
+
+.btn-secondary {
+  background-color: #7f8c8d;
+  color: #5d6d7e;
+}
+
+.btn-secondary:hover {
+  background-color: #7f8c8d;
+}
+
+.btn-danger {
+  background-color: #c0392b;
+  color: #922b21;
+}
+
+.btn-danger:hover {
+  background-color: #c0392b;
+}

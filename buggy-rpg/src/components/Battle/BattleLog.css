@@ -1,0 +1,39 @@
+.battle-log {
+  background-color: #2c3e50;
+  border-radius: 8px;
+  padding: 12px;
+}
+
+.battle-log h3 {
+  margin: 0 0 8px 0;
+  color: #ecf0f1;
+  font-size: 14px;
+}
+
+/* BUG_ID: U3 - テキストがコンテナからはみ出す */
+.battle-log-content {
+  height: 150px;
+  /* overflow: auto; を忘れている */
+  /* 正しくは overflow-y: auto; を追加すべき */
+}
+
+.log-entry {
+  padding: 4px 0;
+  font-size: 13px;
+  border-bottom: 1px solid #34495e;
+  /* BUG_ID: U3 - 長いテキストが折り返されない */
+  /* 正しくは word-wrap: break-word; を追加すべき */
+  white-space: nowrap;
+}
+
+.log-player {
+  color: #3498db;
+}
+
+.log-enemy {
+  color: #e74c3c;
+}
+
+.log-system {
+  color: #f1c40f;
+}
