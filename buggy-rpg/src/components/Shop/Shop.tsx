@@ -23,9 +23,9 @@ export const Shop: React.FC<ShopProps> = ({
   const shopItems = getShopItems();
 
   const handleBuy = (item: Item) => {
-    // BUG_ID: L3 - お金が足りなくても購入できる
-    // 正しくは: if (character.gold >= item.price) { onBuyItem(item); }
-    onBuyItem(item);
+    if (character.gold >= item.price) {
+      onBuyItem(item);
+    }
   };
 
   const handleSell = (item: Item) => {
@@ -65,7 +65,11 @@ export const Shop: React.FC<ShopProps> = ({
                 </div>
                 <div className="shop-item-action">
                   <span className="shop-item-price">{item.price}G</span>
-                  <Button size="small" onClick={() => handleBuy(item)}>
+                  <Button 
+                    size="small" 
+                    onClick={() => handleBuy(item)}
+                    disabled={character.gold < item.price}
+                  >
                     購入
                   </Button>
                 </div>
